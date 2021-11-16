@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width", initial=scale=1.0">
+      <link rel="stylesheet" href="../CSS/Home.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" 
+            rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&dispaly=swap" rel="stylesheet">
+      <title>EMPLOYEE PAYROLL APP</title>
+    
+    </head>
+       <body>
+        <!--UC1-->
+        <header class="header-content header">
+        <div class="logo-content">
+        <img src="C:/Emp_Payroll/Images/logo.png" alt="">
+        <div>
+        <span class="emp-text">EMPLOYEE</span><br>
+        <span class="emp-text emp-payroll">PAYROLL</span>
+       </div>
+       </div>
+        </header>
+        <div class="main-content">
+            <!--UC2-->
+            <div class="header-content">
+        <div class="emp-details-text">
+        Employee Details <div class="emp-count">10</div>
+        </div>
+        <button class="add">+ Add user</button>
+        <a href="../pages/new_Payroll_form_js.html" class="add-button">
+            <img src="="../assets/icons/add-24px.swg" alt=""></a>
+        <div> <!--header-content-->
+            <div class="table-main">
+                <table id="table-dispaly" class="table">
+                </table>
+                
+            </div> <!--table-main-->
+        </div><!--main-content-->
+        <script defer="../js/Employee-Details.js"></script>
+        <script scr="../js/Utility.js"></script>
+        <script scr="../js/site_properties.js"></script>
+        <script scr="../js/Employee-Details.js"></script>
+        </body>
+        <table id="display" class="table">
+            <!--UC3-->
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Start Date</th>
+                <th>Actions</th>
+            </tr>
+            <th>
+                <td><img class="Profile" alt ""
+                          src="../Images/Profile2.jpg">
+                </td>
+                <td>Navytha</td>
+                <td>Female</td>
+                <td><div class='dept-label'>HR</div>
+                    <div class='dept-label'>Finance</div> </td>
+                <td>300000</td>
+                <td>16 Nov 2021</td>
+                <td>
+                    <img id="1" onclick="remove(this)" alt="delete"
+                         src="../Images/Delete.png">
+                    <img id="1" alt="edit" onclick="update(this)"
+                         src="../Images/Pen.png">     
+                </td>
+            </tr>
+        </table>
+        </html>
